@@ -9,12 +9,25 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 app.MapGet("/", (HttpContext context) => {
-    string html = @"<html><body>
-                <h1>Hello World!</h1>
-                <br>
-                 Welcome to this new World!
-                  </body>
-                  </html>";
+
+    WriteHtml(context, $@"
+                       <!doctype html>
+                       <html>
+                            <head><title> mini HTML </title></head>
+                            <body>
+                             <h1>Simple Form<h1>
+                             <br/>
+                             <form action=""/login"" method=""post"">
+                             <label for=""username"">User name:</label>
+                             <input type=""text"" id=""username"" name=""username"" required>
+                             <label for=""password"">Password:</label>
+                             <input type=""password"" id=""password"" name=""password"" required>
+                             <button type=""Submit"">  Login</button>
+                             </form>
+                             </body>
+                        </html>");
+                       
+      
 });
                                    
 

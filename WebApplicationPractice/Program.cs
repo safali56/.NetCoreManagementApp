@@ -29,6 +29,48 @@ app.MapGet("/", (HttpContext context) => {
                        
       
 });
+app.MapPost("/login", (HttpContext context) =>
+{
+    var username = context.Request.Form["username"];
+    var password = context.Request.Form["password"];
+
+    if (username == "safali" && password == "password")
+    {
+        var html = @$" 
+                  <!doctype html> 
+                  <html>
+                       <head><title>mini HTML</title></head>
+                       <body>
+                       <h1> Simple FrameWork </h1>
+                       <br/>
+                       Welcome to simple FrameWork!
+                       </body>
+                 </html>";
+        WriteHtml(context, html);
+    }
+    else
+    {
+        var html = $@"
+                       <!doctype html>
+                       <html>
+                            <head><title> mini HTML </title></head>
+                            <body>
+                             <h1>Simple Form<h1>
+                             <br/>
+                             <form action=""/login"" method=""post"">
+                             <label for=""username"">User name:</label>
+                             <input type=""text"" id=""username"" name=""username"" required>
+                             <label for=""password"">Password:</label>
+                             <input type=""password"" id=""password"" name=""password"" required>
+                             <button type=""Submit"">  Login</button>
+                             <br/>
+                             <label style=""color:red""> Login Failed </label>
+                             </form>
+                             </body>
+                        </html>";
+        WriteHtml(context, html);
+    }
+});
                                    
 
 app.Run();

@@ -28,3 +28,5 @@ C:\Users\safal\OneDrive\Desktop\mohawk\third_semester\.Net\Project\MVCCourse\Web
 C:\Users\safal\OneDrive\Desktop\mohawk\third_semester\.Net\Project\MVCCourse\WebApplicationPractice\obj\Debug\net8.0\WebApplicationPractice.genruntimeconfig.cache
 C:\Users\safal\OneDrive\Desktop\mohawk\third_semester\.Net\Project\MVCCourse\WebApplicationPractice\obj\Debug\net8.0\ref\WebApplicationPractice.dll
 C:\Users\safal\OneDrive\Desktop\mohawk\third_semester\.Net\Project\MVCCourse\WebApplicationPractice\obj\Debug\net8.0\WebApplicationPractice.sourcelink.json
+C:\Users\safal\OneDrive\Desktop\mohawk\third_semester\.Net\Project\MVCCourse\WebApplicationPractice\obj\Debug\net8.0\WebApplicationPractice.RazorAssemblyInfo.cache
+C:\Users\safal\OneDrive\Desktop\mohawk\third_semester\.Net\Project\MVCCourse\WebApplicationPractice\obj\Debug\net8.0\WebApplicationPractice.RazorAssemblyInfo.cs

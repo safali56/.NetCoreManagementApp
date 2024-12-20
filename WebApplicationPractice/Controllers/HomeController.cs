@@ -5,13 +5,15 @@ namespace WebApplicationPractice.Controllers
 {
     public class HomeController : Controller
     {
-        public string  Index()
+        public IActionResult  Index()
         {
-            return "Hello World from the Action Method";
+            return View();
         }
-        public String Error()
-        {
-            return "I have an error here";
-        }
+        //public String Error()
+        //{
+        //    return "I have an error here";
+        //}
+
+        
     }
 }
